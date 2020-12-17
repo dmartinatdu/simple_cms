@@ -1,0 +1,50 @@
+<h1>Hello World from HELLO WORLD!!!!</h1>
+
+<p>First example of placing ERB code into the template to display a math operation.</p>
+<%= 1+1 %>
+
+
+<p>Second exmple, using Ruby code and displaying result.</p>
+<% target = "World"%>
+<%= "Hello #{target}"%>
+
+<br />
+<p>Third example, where Ruby code output needs to be explicitly stated in ERB code. <br />
+Ruby standard out will go to the console as expected (such as the consecutive results <br />
+of a looped operation) but the output to html will be the sum of those results, unless <br />
+specifically handled as seen below. </p>
+
+<p>Summed output of a looping operation if code is simply placed within a single ERB <br />
+output tag set.</p>
+
+<%= 
+3.times do |n| 
+  puts n
+end
+%>
+
+<br />
+<p>Below, same loop, but with proper formatting of Ruby code in ERB to display <br />
+consecutive results of looped operation instead of the sum of the output.</p>
+
+<!--1. Process w/o output -->
+
+<%@array.each do |n| %>
+
+<!--2. Display the iteration's result before next loop-->
+
+<%= n %><br />
+
+<!--Process end w/o output-->
+
+<% end %>
+
+<br />
+
+<p>Note: <br />
+The above example used an array that was passed from the controller to demonstrate <br /> 
+instance variables that can be passed to the view (in this case "@array").</p>
+
+<p>The link below was generated using the link_to(text,target) helper method.</p>
+
+<%= link_to('Index page', {:controller => 'first_con', :action => 'index'}) %> <br />
