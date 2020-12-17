@@ -1,5 +1,5 @@
 # README
-This is the initial rails app that I am building as part of teh Lynda course "Ruby on Rails 5 Essential Training"
+This is the initial rails app that I am building as part of the Lynda course "Ruby on Rails 5 Essential Training"
 I am hoping to get a better understanding of how to utilize GitHub and similar development services.
 
 
