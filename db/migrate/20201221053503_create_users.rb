@@ -12,7 +12,7 @@ class CreateUsers < ActiveRecord::Migration[6.0]
       # t.datetime "created_at"
       # t.datetime "updated_at"
 
-      #Note that below shorthand for the above 2 datetime lines of code
+      #Note that below shorthand replaces the above 2 datetime lines of code
       t.timestamps
     end
   end
