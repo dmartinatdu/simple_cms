@@ -7,7 +7,7 @@ class DemoController < ApplicationController
   end
 
   def hello
-    #array created to demonstarte instance variables that can 
+    #array created to demonstrate instance variables that can 
     #be passed to the view
     @array = [1,2,3,4,5]
     render ('hello')
